@@ -8,11 +8,14 @@
 | `office-docs` | 备用分支（当前与 main 相同，可用于后续 Office 文档相关的代码/脚本开发） |
 | `pdf-docs` | 备用分支（当前与 main 相同） |
 
-## 核心工具
+## 核心工具（源代码在本仓库，运行入口在桌面）
 
-`tools/清理文档元数据.bat` + `tools/docx_metadata_cleaner.py`：
-离线清除 .docx / .pptx / .xlsx / .pdf 的元数据（作者、公司、创建/修改时间、KSO*/ICV 自定义属性、缩略图、XMP 等）。
-使用方式：把文件或文件夹拖到 bat 上，原目录生成「_已清理元数据」副本。桌面 `文档元数据清理工具\` 下有同一套工具。
+- **源代码（唯一正本）**：`tools/docx_metadata_cleaner.py` —— 离线清除 .docx / .pptx / .xlsx / .pdf 的元数据
+  （作者、公司、创建/修改时间、KSO*/ICV 自定义属性、缩略图、XMP 等）。
+- **桌面运行入口**：`C:\Users\Administrator\Desktop\文档元数据清理工具\清理文档元数据.bat`
+  —— 只有一个启动器，调用本仓库中的源代码。把文件或文件夹拖到 bat 上，原目录生成「_已清理元数据」副本。
+- **运行依赖**：受管 Python `C:\Users\Administrator\.workbuddy\binaries\python\envs\default\`（含 pypdf）。
+- ⚠️ 不要移动/重命名本工作区目录，否则桌面 bat 会找不到源代码（bat 内已做检测并给出提示）。
 
 ## 日常操作
 
