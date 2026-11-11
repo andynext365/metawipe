@@ -1,5 +1,9 @@
 # MetaWipe 🧹
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11%2064--bit-blue.svg)]()
+[![Offline](https://img.shields.io/badge/Network-100%25%20Offline-brightgreen.svg)]()
+
 **Office / PDF 文档元数据离线清理工具** —— 一拖即清，文件不出你的电脑。
 
 把 Word、PPT、Excel、PDF 文件拖到工具上，即可清除其中的作者、公司、创建/修改时间、软件指纹等隐私元数据，生成一份「干净」的副本用于对外发送。**全程本地处理，零联网、零上传。**
@@ -26,11 +30,13 @@
 
 ## 📦 下载与使用
 
-### 普通用户（免安装）
+### 普通用户（免安装，推荐）
 
-1. 下载 Release 中的 `cleanmeta.exe`（单文件，约 26 MB）；
-2. 把 `.docx` / `.pptx` / `.xlsx` / `.pdf` 文件或整个文件夹**拖到 exe 上**；
+1. 到 **[Releases](https://github.com/andynext365/metawipe/releases)** 页面下载 `MetaWipe-v1.0.0-win64.zip`（约 26 MB）；
+2. 解压后，把 `.docx` / `.pptx` / `.xlsx` / `.pdf` 文件或整个文件夹**拖到 `cleanmeta.exe` 上**；
 3. 在原目录拿到「_已清理元数据」副本，直接发送即可。
+
+> 支持 Windows 10/11 64 位；无需安装 Python、WPS 或 Office；全程离线，不联网。
 
 也支持命令行：
 
