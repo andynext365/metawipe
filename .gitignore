@@ -6,6 +6,11 @@ meta_clean/
 __pycache__/
 *.pyc
 
+# ===== PyInstaller 打包产物（exe 体积大，不入库；需要时重新打包）=====
+build/
+dist/
+*.spec
+
 # ===== Office 临时锁文件（打开文档时自动生成）=====
 ~$*
 
