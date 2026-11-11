@@ -1,0 +1,19 @@
+# ===== WorkBuddy 运行数据与记忆（切勿删除或提交）=====
+.workbuddy/
+meta_clean/
+
+# ===== Python 运行产物 =====
+__pycache__/
+*.pyc
+
+# ===== Office 临时锁文件（打开文档时自动生成）=====
+~$*
+
+# ===== 日志与临时输出 =====
+*.log
+clean_log.txt
+*.tmp
+
+# ===== 备份文件 =====
+*.bak
+*~
